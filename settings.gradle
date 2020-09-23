@@ -1,0 +1,3 @@
+include ':singledateandtimepicker'
+include ':app'
+rootProject.name = "PersianDatePicker"
