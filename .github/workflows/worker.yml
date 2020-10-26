@@ -43,8 +43,12 @@ jobs:
         with:
           java-version: 1.8
 
+      - run:
+          name: Chmod permissions
+          command: sudo chmod +x ./gradlew
+
       - name: Publish library
         env:
           bintrayUser: ${{ secrets.BINTRAY_USER }}
           bintrayApiKey: ${{ secrets.BINTRAY_API_KEY }}
-        run: cd android && chmod +x ./gradlew bintrayUpload
+        run: bash ./gradlew bintrayUpload
