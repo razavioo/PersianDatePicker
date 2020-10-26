@@ -83,7 +83,7 @@ ext {
 
 ext {
     // General info
-    bintrayRepo = 'PersianDatePicker'
+    bintrayRepo = 'generic'
     bintrayName = 'persian-date-picker'
 
     // Library Details
