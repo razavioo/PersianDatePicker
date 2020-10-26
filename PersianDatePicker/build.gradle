@@ -49,47 +49,15 @@ dependencies {
     api 'com.shawnlin:number-picker:2.4.11'
 }
 
-
-ext {
-    // This should be same as you've created in bintray
-    bintrayRepo = 'PersianDatePicker'
-
-    // Name which will be visible on bintray
-    bintrayName = 'razavioo'
-
-    // Library Details
-    publishedGroupId = 'dev.shreyaspatil'
-    libraryName = 'CoolLibrary'
-    artifact = 'CoolLibrary'
-    libraryDescription = 'Cool Library'
-    libraryVersion = version
-
-    // Repository Link (For e.g. GitHub repo)
-    siteUrl = 'https://github.com/razavioo/PersianDatePicker'
-    gitUrl = 'https://github.com/razavioo/PersianDatePicker.git'
-    githubRepository = 'razavioo/PersianDatePicker'
-
-    // Developer Details
-    developerId = 'patilshreyas'
-    developerName = 'Shreyas Patil'
-    developerEmail = 'shreyaspatilg@gmail.com'
-
-    // License Details
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
-
 ext {
     // General info
-    bintrayRepo = 'generic'
-    bintrayName = 'persian-date-picker'
+    bintrayRepo = 'PersianDatePicker'
+    bintrayName = 'dev.emad.persiandatepicker'
 
     // Library Details
     publishedGroupId = 'dev.emad'
-    libraryName = 'persianDatePicker'
-    artifact = 'persian-date-picker'
+    libraryName = 'persiandatepicker'
+    artifact = 'persiandatepicker'
     libraryDescription = 'An android date picker for persian calendar'
     libraryVersion = '1.0.0'
 
@@ -98,13 +66,15 @@ ext {
     gitUrl = 'https://github.com/razavioo/PersianDatePicker.git'
     githubRepository = 'razavioo/PersianDatePicker'
 
+    // Developer's Info
     developerId = 'razavioo'
     developerName = 'Seyyed Emad Razavi'
     developerEmail = 'razavioo@gmail.com'
 
+    // Licensing
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
 
-apply from: 'https://raw.githubusercontent.com/ktvipin27/RoomInspector/master/library/publish.gradle'
+apply from: 'publish.gradle'
