@@ -83,13 +83,13 @@ ext {
 
 ext {
     // General info
-    bintrayRepo = 'maven'
-    bintrayName = 'PersianDatePicker'
+    bintrayRepo = 'PersianDatePicker'
+    bintrayName = 'persian-date-picker'
 
     // Library Details
     publishedGroupId = 'dev.emad'
     libraryName = 'persianDatePicker'
-    artifact = 'ui'
+    artifact = 'persian-date-picker'
     libraryDescription = 'An android date picker for persian calendar'
     libraryVersion = '1.0.0'
 
