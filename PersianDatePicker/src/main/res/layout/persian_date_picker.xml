@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/yearNumberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:np_dividerColor="@android:color/transparent"
+        app:np_orientation="horizontal"
+        app:np_selectedTextSize="15sp"
+        app:np_textSize="14sp"
+        app:np_width="250dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/monthNumberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:np_dividerColor="@android:color/transparent"
+        app:np_orientation="horizontal"
+        app:np_selectedTextSize="15sp"
+        app:np_textSize="14sp"
+        app:np_width="250dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/dayNumberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:np_dividerColor="@android:color/transparent"
+        app:np_orientation="horizontal"
+        app:np_selectedTextSize="15sp"
+        app:np_textSize="14sp"
+        app:np_width="250dp" />
+
+</LinearLayout>
