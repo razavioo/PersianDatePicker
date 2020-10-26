@@ -50,4 +50,4 @@ jobs:
         env:
           bintrayUser: ${{ secrets.BINTRAY_USER }}
           bintrayApiKey: ${{ secrets.BINTRAY_API_KEY }}
-        run: bash ./gradlew bintrayUpload
+        run: gradle bintrayUpload
