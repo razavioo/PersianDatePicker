@@ -53,6 +53,7 @@ ext {
     // General info
     bintrayRepo = 'persian-date-picker'
     bintrayName = 'persian-date-picker'
+    bintrayUserOrg = 'emadrazavi'
 
     // Library Details
     publishedGroupId = 'dev.emad'
