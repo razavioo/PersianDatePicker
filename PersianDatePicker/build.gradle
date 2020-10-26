@@ -83,8 +83,8 @@ ext {
 
 ext {
     // General info
-    bintrayRepo = 'PersianDatePicker'
-    bintrayName = 'Persian Date Picker'
+    bintrayRepo = 'maven'
+    bintrayName = 'PersianDatePicker'
 
     // Library Details
     publishedGroupId = 'dev.emad'
