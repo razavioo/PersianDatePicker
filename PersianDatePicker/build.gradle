@@ -51,8 +51,8 @@ dependencies {
 
 ext {
     // General info
-    bintrayRepo = 'persian-date-picker'
-    bintrayName = 'persian-date-picker'
+    bintrayRepo = 'PersianDatePicker'
+    bintrayName = 'dev.emad.persiandatepicker'
     bintrayUserOrg = 'emadrazavi'
 
     // Library Details
