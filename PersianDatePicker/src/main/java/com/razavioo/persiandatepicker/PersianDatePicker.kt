@@ -8,6 +8,7 @@ import com.shawnlin.numberpicker.NumberPicker
 import kotlinx.android.synthetic.main.persian_date_picker.view.*
 import saman.zamani.persiandate.PersianDate
 
+@Suppress("LeakingThis")
 open class PersianDatePicker @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
@@ -28,6 +29,7 @@ open class PersianDatePicker @JvmOverloads constructor(
     init {
         inflate(context, R.layout.persian_date_picker, this)
 
+        yearNumberPicker.setFormatter(resources.getString(R.string.number_picker_formatter))
         yearNumberPicker.minValue = Integer.MIN_VALUE
         yearNumberPicker.maxValue = Integer.MAX_VALUE
 

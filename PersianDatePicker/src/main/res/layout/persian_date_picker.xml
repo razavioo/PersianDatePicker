@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical">
@@ -14,7 +14,7 @@
 
     <com.shawnlin.numberpicker.NumberPicker
         android:id="@+id/yearNumberPicker"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
@@ -22,7 +22,8 @@
         app:np_formatter="@string/number_picker_formatter"
         app:np_orientation="horizontal"
         app:np_selectedTextSize="15sp"
-        app:np_textSize="14sp" />
+        app:np_textSize="14sp"
+        app:np_wrapSelectorWheel="true" />
 
     <TextView
         android:id="@+id/textMonthTitle"
@@ -33,7 +34,7 @@
 
     <com.shawnlin.numberpicker.NumberPicker
         android:id="@+id/monthNumberPicker"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
@@ -51,7 +52,7 @@
 
     <com.shawnlin.numberpicker.NumberPicker
         android:id="@+id/dayNumberPicker"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="vertical"

@@ -8,7 +8,7 @@
 
     <com.razavioo.sample.MyPersianDatePicker
         android:id="@+id/persianDatePicker"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/background_solid_gray_round"
         android:padding="8dp" />
