@@ -36,4 +36,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(path: ':PersianDatePicker')
+    implementation 'com.shawnlin:number-picker:2.4.11'
 }
