@@ -5,19 +5,13 @@
 This library is a Persian date picker with huge customization options.
 My initial idea for creating this library was to build it to be used for a lot of different UI conditions.
 
+## Screenshot
+<img src="https://github.com/razavioo/PersianDatePicker/blob/master/screenshot/screenshot.png">
 
 ## Customizations
 
 Views of this class can be changed directly, according to your UI needs. The library is dependent on this great [NumberPicker](https://github.com/ShawnLin013/NumberPicker) library.
-So you can play with each of these library's features except for **setOnValueChangedListener()**, which is directly used in our library.
-
-## Special thanks
-
-Thanks for Shawn with his great work in [NumberPicker](https://github.com/ShawnLin013/NumberPicker), which is beyond my imagination.
-The UI of this library is dependent on his module.
-
-Thanks for the amazing work of Saman Zamani for creating the [PersianDate](https://github.com/samanzamani/PersianDate), which this class is built upon it.
-His work made creating this library so easy.
+So you can play with each of these library's features except for `setOnValueChangedListener()`, which is directly used in our library.
 
 ## Gradle
 
@@ -45,7 +39,7 @@ After adding these two dependencies, sync your project and start using the View 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 ```
-
+* #### UI elements
 As you can see, this class does not have any custom XML attributes because that will make the view less customizable.
 If you need to change the UI parameter, you can get each of the inner view elements programmatically.
 
@@ -60,15 +54,17 @@ The methods for grabbing Views that you can change it is as follows.
 | getMonthTitleTextView() | TextView     | get TextView for title of month picker
 | getDayTitleTextView()   | TextView     | get TextView for title of day picker
 
- The **NumberPicker** is the view of the custom number picker.
+The **NumberPicker** is the view of the custom number picker.
  
- We have a method to choose whether you want to show month values as digits or strings.
- Digits are the number of the month, and the string is the name of the month.
+* #### Month picker format
+We have a method to choose whether you want to show month values as digits or strings.
+Digits are the number of the month, and the string is the name of the month.
  
 | Method                               | Description
 | ------------------------------------- | --------|
 | setMonthType((monthType: MonthType))  | set month value type (**MonthType.DIGIT** or **MonthType.STRING**)
 
+* #### Listener
 For listening to changes in the picker, you can use the below method.
 the interface hase three methods, **onYearChanged**, **onMonthChanged**, **onDayChanged**.
 
@@ -78,8 +74,16 @@ the interface hase three methods, **onYearChanged**, **onMonthChanged**, **onDay
 
 ## Implementation suggestion
 As this clas needs to be customized based off of your special UI needs and conditions, 
-I suggest that you create a class that extends the **PersianDatePicker** class and has initialized with all your special configurations. then use this class instead of the general class.
+I suggest that you create a class that extends the [**PersianDatePicker**](https://github.com/razavioo/PersianDatePicker/blob/master/PersianDatePicker/src/main/java/com/razavioo/persiandatepicker/PersianDatePicker.kt) class and has initialized with all your special configurations. then use this class instead of the general class.
 In the [sample](https://github.com/razavioo/PersianDatePicker/blob/master/app/src/main/java/com/razavioo/sample/MyPersianDatePicker.kt), I have created one and you can get the idea by watching it.
+
+## Special thanks
+
+Thanks for Shawn with his great work in [NumberPicker](https://github.com/ShawnLin013/NumberPicker), which is beyond my imagination.
+The UI of this library is dependent on his module.
+
+Thanks for the amazing work of Saman Zamani for creating the [PersianDate](https://github.com/samanzamani/PersianDate), which this class is built upon it.
+His work made creating this library so easy.
 
 ## License
 The source code is licensed under the [apache2](LICENSE) license.
