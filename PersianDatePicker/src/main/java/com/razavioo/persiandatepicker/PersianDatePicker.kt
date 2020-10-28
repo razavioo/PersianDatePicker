@@ -36,8 +36,6 @@ open class PersianDatePicker @JvmOverloads constructor(
         monthNumberPicker.minValue = MINIMUM_MONTH_VALUE
         monthNumberPicker.maxValue = MAXIMUM_MONTH_VALUE
 
-        initToday()
-
         yearNumberPicker.setOnValueChangedListener { _, _, newYear ->
             year = newYear
             listener?.onYearChanged(year, month, day)
@@ -54,6 +52,8 @@ open class PersianDatePicker @JvmOverloads constructor(
             day = newDay
             listener?.onDayChanged(year, month, day)
         }
+
+        initToday()
     }
 
     private fun initToday() {
@@ -66,8 +66,6 @@ open class PersianDatePicker @JvmOverloads constructor(
         yearNumberPicker.value = year
         monthNumberPicker.value = month
         dayNumberPicker.value = day
-
-        updateDayPicker()
     }
 
     private fun getPersianDate(): PersianDate {
@@ -107,6 +105,10 @@ open class PersianDatePicker @JvmOverloads constructor(
 
     fun setListener(listener: Listener) {
         this.listener = listener
+
+        listener.onYearChanged(year, month, day)
+        listener.onMonthChanged(year, month, day)
+        listener.onDayChanged(year, month, day)
     }
 
     fun getYearNumberPicker(): NumberPicker {
