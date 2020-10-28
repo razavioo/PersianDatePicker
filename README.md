@@ -69,14 +69,14 @@ Digits are the number of the month, and the string is the name of the month.
 
 * #### Listener
 For listening to changes in the picker, you can use the below method.
-the interface hase three methods, **onYearChanged**, **onMonthChanged**, **onDayChanged**.
+the interface has three methods, **onYearChanged**, **onMonthChanged**, **onDayChanged**.
 
 | Method                               | Description
 | ------------------------------------- | --------|
-| setListener(listener: Listener)  | set listener for year, month and day changes
+| setListener(listener: Listener)  | set a listener for the year, month, and day changes
 
 ## Implementation suggestion
-As this clas needs to be customized based off of your special UI needs and conditions, 
+As this class needs to be customized based on your special UI needs and conditions, 
 I suggest that you create a class that extends the [**PersianDatePicker**](https://github.com/razavioo/PersianDatePicker/blob/master/PersianDatePicker/src/main/java/com/razavioo/persiandatepicker/PersianDatePicker.kt) class and has initialized with all your special configurations. then use this class instead of the general class.
 In the [sample](https://github.com/razavioo/PersianDatePicker/blob/master/app/src/main/java/com/razavioo/sample/MyPersianDatePicker.kt), I have created one and you can get the idea by watching it.
 
