@@ -1,12 +1,15 @@
 # PersianDatePicker
 
-[ ![Download](https://api.bintray.com/packages/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/images/download.svg?version=1.0.1) ](https://bintray.com/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/1.0.1/link)
+[![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
+[ ![Download](https://api.bintray.com/packages/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/images/download.svg?version=1.0.4) ](https://bintray.com/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/1.0.4/link)
+[![API](https://img.shields.io/badge/API-17%2B-blue.svg?color=important)](https://android-arsenal.com/api?level=17) 
+![GitHub](https://img.shields.io/github/license/razavioo/PersianDatePicker?color=red)
 
 This library is a Persian date picker with huge customization options.
 My initial idea for creating this library was to build it to be used for a lot of different UI conditions.
 
 ## Screenshot
-<img src="https://github.com/razavioo/PersianDatePicker/blob/master/screenshot/screenshot.png">
+<img src="https://github.com/razavioo/PersianDatePicker/blob/master/screenshot/screenshot.png" width=300>
 
 ## Customizations
 
@@ -25,8 +28,8 @@ buildscript {
 }
 
 dependencies {
+    implementation 'dev.emad:persiandatepicker:{latest_version}'
     implementation 'com.shawnlin:number-picker:2.4.11'
-    implementation 'dev.emad:persiandatepicker:1.0.1'
 }
 ```
 
