@@ -1,7 +1,7 @@
 # PersianDatePicker
 
 [![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
-[ ![Download](https://api.bintray.com/packages/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/images/download.svg?version=1.0.4) ](https://bintray.com/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/1.0.4/link)
+[ ![Download](https://api.bintray.com/packages/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/images/download.svg?version=1.0.6) ](https://bintray.com/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/1.0.6/link)
 [![API](https://img.shields.io/badge/API-17%2B-blue.svg?color=important)](https://android-arsenal.com/api?level=17) 
 ![GitHub](https://img.shields.io/github/license/razavioo/PersianDatePicker?color=red)
 
