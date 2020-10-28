@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PersianDatePicker</string>
+    <string name="date_format">Picked date is %d/%d/%d</string>
 </resources>

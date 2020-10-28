@@ -3,4 +3,5 @@
     <string name="year">سال</string>
     <string name="day">روز</string>
     <string name="month">ماه</string>
+    <string name="number_picker_formatter">%d</string>
 </resources>

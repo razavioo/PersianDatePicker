@@ -19,6 +19,7 @@
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:np_dividerColor="@android:color/transparent"
+        app:np_formatter="@string/number_picker_formatter"
         app:np_orientation="horizontal"
         app:np_selectedTextSize="15sp"
         app:np_textSize="14sp" />

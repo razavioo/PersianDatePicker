@@ -9,24 +9,16 @@
     <com.razavioo.sample.MyPersianDatePicker
         android:id="@+id/persianDatePicker"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_solid_gray_round"
+        android:padding="8dp" />
 
     <TextView
-        android:id="@+id/textYear"
+        android:id="@+id/textDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp" />
-
-    <TextView
-        android:id="@+id/textMonth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" />
-
-    <TextView
-        android:id="@+id/textDay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_solid_gray_round"
+        android:padding="8dp" />
 
 </LinearLayout>
