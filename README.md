@@ -1,12 +1,15 @@
 # PersianDatePicker
 
-[ ![Download](https://api.bintray.com/packages/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/images/download.svg?version=1.0.1) ](https://bintray.com/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/1.0.1/link)
+[![platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
+[ ![Download](https://api.bintray.com/packages/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/images/download.svg?version=1.0.4) ](https://bintray.com/emadrazavi/PersianDatePicker/dev.emad.persiandatepicker/1.0.4/link)
+[![API](https://img.shields.io/badge/API-17%2B-blue.svg?color=important)](https://android-arsenal.com/api?level=17) 
+![GitHub](https://img.shields.io/github/license/razavioo/PersianDatePicker?color=red)
 
 This library is a Persian date picker with huge customization options.
 My initial idea for creating this library was to build it to be used for a lot of different UI conditions.
 
 ## Screenshot
-<img src="https://github.com/razavioo/PersianDatePicker/blob/master/screenshot/screenshot.png">
+<img src="https://github.com/razavioo/PersianDatePicker/blob/master/screenshot/screenshot.png" width=300>
 
 ## Customizations
 
@@ -25,8 +28,8 @@ buildscript {
 }
 
 dependencies {
+    implementation 'dev.emad:persiandatepicker:{latest_version}'
     implementation 'com.shawnlin:number-picker:2.4.11'
-    implementation 'dev.emad:persiandatepicker:1.0.1'
 }
 ```
 
@@ -66,14 +69,14 @@ Digits are the number of the month, and the string is the name of the month.
 
 * #### Listener
 For listening to changes in the picker, you can use the below method.
-the interface hase three methods, **onYearChanged**, **onMonthChanged**, **onDayChanged**.
+the interface has three methods, **onYearChanged**, **onMonthChanged**, **onDayChanged**.
 
 | Method                               | Description
 | ------------------------------------- | --------|
-| setListener(listener: Listener)  | set listener for year, month and day changes
+| setListener(listener: Listener)  | set a listener for the year, month, and day changes
 
 ## Implementation suggestion
-As this clas needs to be customized based off of your special UI needs and conditions, 
+As this class needs to be customized based on your special UI needs and conditions, 
 I suggest that you create a class that extends the [**PersianDatePicker**](https://github.com/razavioo/PersianDatePicker/blob/master/PersianDatePicker/src/main/java/com/razavioo/persiandatepicker/PersianDatePicker.kt) class and has initialized with all your special configurations. then use this class instead of the general class.
 In the [sample](https://github.com/razavioo/PersianDatePicker/blob/master/app/src/main/java/com/razavioo/sample/MyPersianDatePicker.kt), I have created one and you can get the idea by watching it.
 
