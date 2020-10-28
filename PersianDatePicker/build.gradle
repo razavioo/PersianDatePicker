@@ -59,7 +59,7 @@ ext {
     libraryName = 'persiandatepicker'
     artifact = 'persiandatepicker'
     libraryDescription = 'An android date picker for persian calendar'
-    libraryVersion = '1.0.7'
+    libraryVersion = '1.0.8'
 
     // Repository Link (For e.g. GitHub repo)
     siteUrl = 'https://github.com/razavioo/PersianDatePicker'
