@@ -18,15 +18,14 @@ jobs:
       - name: Set release name
         
         run: |
-          echo "::stop-commands::`echo -n ${{ github.token }} | sha256sum | head -c 64`"
           echo ::set-env name=RELEASE_NAME::$(echo ${GITHUB_REF:11})
-          echo "::`echo -n ${{ github.token }} | sha256sum | head -c 64`::"
 
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ env.RELEASE_NAME }}
