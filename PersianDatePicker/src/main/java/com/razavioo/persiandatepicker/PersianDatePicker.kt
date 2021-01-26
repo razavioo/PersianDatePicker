@@ -66,6 +66,8 @@ open class PersianDatePicker @JvmOverloads constructor(
         yearNumberPicker.value = year
         monthNumberPicker.value = month
         dayNumberPicker.value = day
+
+        updateDayPicker()
     }
 
     private fun getPersianDate(): PersianDate {
