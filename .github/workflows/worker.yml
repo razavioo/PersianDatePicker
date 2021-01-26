@@ -16,7 +16,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set release name
-        run: echo ::set-env name=RELEASE_NAME::$(echo ${GITHUB_REF:11})
+        
+        run: |
+          echo "::stop-commands::`echo -n ${{ github.token }} | sha256sum | head -c 64`"
+          echo ::set-env name=RELEASE_NAME::$(echo ${GITHUB_REF:11})
+          echo "::`echo -n ${{ github.token }} | sha256sum | head -c 64`::"
 
       - name: Create release
         id: create_release
