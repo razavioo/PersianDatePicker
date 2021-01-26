@@ -82,7 +82,7 @@ In the [sample](https://github.com/razavioo/PersianDatePicker/blob/master/app/sr
 
 ## Special thanks
 
-Thanks for Shawn with his great work in [NumberPicker](https://github.com/ShawnLin013/NumberPicker), which is beyond my imagination.
+Thanks to Shawn for his great work in [NumberPicker](https://github.com/ShawnLin013/NumberPicker), which is beyond my imagination.
 The UI of this library is dependent on his module.
 
 Thanks for the amazing work of Saman Zamani for creating the [PersianDate](https://github.com/samanzamani/PersianDate), which this class is built upon it.
