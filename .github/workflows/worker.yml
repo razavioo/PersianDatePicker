@@ -6,29 +6,20 @@ on:
       - 'v*'
 
 jobs:
-
   release:
     name: Create Release
     runs-on: macos-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Set release name
-        
-        run: |
-          echo ::set-env name=RELEASE_NAME::$(echo ${GITHUB_REF:11})
-
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         with:
           tag_name: ${{ github.ref }}
-          release_name: ${{ env.RELEASE_NAME }}
+          release_name: ${{ github.ref }}
           draft: false
           prerelease: false
 
